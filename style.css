@@ -1,0 +1,254 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body,
+html {
+  overflow-x: hidden;
+}
+header {
+  /* width: 100vw; */
+  height: 100vh;
+  background-image: url("Adventure.jpg");
+  /* opacity:0.7; */
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.header-content {
+  margin-bottom: 150px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+.header-content h2 {
+  font-size: 4vmin;
+}
+.line {
+  width: 150px;
+  height: 4px;
+  background-color: blue;
+  margin: 10px auto;
+  border-radius: 6px;
+}
+.header-content h1 {
+  font-size: 7vmin;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.ctn {
+  padding: 9px 17px;
+  background: rgb(103, 43, 255);
+  color: whitesmoke;
+  border-radius: 19px;
+  font-size: 2vmin;
+}
+ul {
+  list-style: none;
+}
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px;
+  color: whitesmoke;
+}
+.navlink {
+  display: flex;
+  align-items: center;
+}
+.navlink li {
+  margin: 0px 30px;
+}
+.menu_but {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  width: 45px;
+  display: none;
+}
+section {
+  width: 80%;
+  margin: 80px auto;
+}
+.title {
+  text-align: center;
+  font-size: 4vmin;
+  color: rgb(3, 96, 127);
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.row .column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+.point {
+  width: 550px;
+}
+p {
+  font-size: 2vmin;
+  color: black;
+  padding: 0px 40px;
+}
+
+.event .row {
+  margin-top: 50px;
+}
+h4 {
+  font-size: 3vmin;
+  color: rgb(73, 72, 71);
+  margin: 20px auto;
+}
+
+.explore {
+  width: 100%;
+  height: 100vh;
+  background-image: url("Explore.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+.explore-Content {
+  width: 60%;
+  padding: 30px;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.explore-Content h1 {
+  font-size: 7vmin;
+}
+.explore-Content p {
+  color: whitesmoke;
+}
+.explore-Content .ctn {
+  margin-top: 30px;
+}
+.explore-Content .line {
+  margin-bottom: 50px;
+}
+
+.tours .row .column {
+  width: 50%;
+}
+.tours .image-g {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+}
+.image-g img {
+  width: 300px;
+  margin: 10px;
+}
+
+.img-col h1 {
+  font-size: 7vmin;
+}
+
+.img-col .line {
+  margin-left: 1px;
+}
+
+.img-col p {
+  margin: 30px auto;
+}
+.img-col .ctn {
+  margin-left: -600px;
+}
+.footer {
+  width: 100%;
+  height: 200px;
+  background-color: black;
+  padding: 30px 80px;
+  margin: 0;
+}
+.footer p {
+  text-align: center;
+  color: whitesmoke;
+  margin: 10px;
+}
+@media only screen and (max-width: 1000px) {
+  .navbar {
+    padding: 0;
+  }
+  .menu_but {
+    display: block;
+  }
+  .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: black;
+  }
+  .navlink {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    margin-top: -1200px;
+    transition: all 0.9s ease;
+    background: linear-gradient(rgb(255, 255, 255), rgb(0, 255, 251));
+  }
+  .Mobile_menu {
+    margin-top: 0;
+    border-bottom-right-radius: 100px;
+  }
+  .navlink li {
+    margin: 40px auto;
+  }
+  .row {
+    flex-direction: column;
+  }
+
+  .column img {
+    max-width: 90%;
+  }
+
+  .row .column {
+    margin: 20px auto;
+  }
+
+  .explore .explore-Content {
+    width: 100%;
+  }
+  .tours .column {
+    width: 100%;
+  }
+  .image-g {
+    justify-content: center;
+    align-items: center;
+  }
+  .image-g img {
+    width: 90%;
+  }
+  .img-col .ctn {
+    margin-left: 15px;
+  }
+  .img-col h1 {
+    text-align: center;
+  }
+  .img-col {
+    color: blue;
+  }
+}
